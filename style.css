@@ -1,0 +1,109 @@
+body {
+  margin:0;
+}
+
+img {
+  xmax-width: 100%;  
+}
+  
+ul.topnav {
+  background-color: #be0b0d;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+ul.topnav li {
+  float: left;
+  text-align: center;
+  width: 25%;
+}
+
+ul.topnav li a {
+  color: #ffd500;
+  display: block;
+  padding: 14px 16px;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+ul.topnav li:hover {
+  background-color: #ffd500;
+}
+
+ul.topnav li:hover a { 
+  color: #be0b0d;
+}
+  
+.icon {
+  display: none; 
+} 
+
+.icon a {  
+  text-decoration: none;
+  color: #000;
+}
+
+.icon.open {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */
+  transform: rotate(90deg);
+}
+
+.icon.close {
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Safari */
+  transform: rotate(0deg);
+}
+
+.hb-img {
+  border: 1px solid black;
+  border-radius: 50%;
+  box-shadow: 10px 10px 15px grey;
+  margin-left: 20px;
+}
+
+.zoomin img { 
+  height: auto; width: 250px; -webkit-transition: all 2s ease; -moz-transition: all 2s ease; -ms-transition: all 2s ease; transition: all 2s ease; } 
+
+.zoomin img:hover { 
+  width: 450px; 
+  height: auto; 
+}
+
+.grow { 
+  transition: 2s ease-in-out; 
+}
+
+.grow:hover { 
+  transform: scale(2); 
+}
+
+@media (max-width:410px) {
+  ul.topnav {
+    display: none;
+  }
+
+  div.icon {
+    display: inline-block;
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  ul.topnav.responsive {
+    display: block;
+    transition: display 2s;
+  }
+
+  ul.topnav.responsive li {
+    clear: both;
+    text-align: center;
+    width: 100%;
+  }
+  
+  ul.topnav.responsive li a {
+    display: block;
+    transition: display 2s;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' type='text/css' href='style.css' />
+<meta name='viewport' content="width=device-width, initial-scale=1.0" />
+<meta charset='utf-8'>
+<script>
+function toggle() {
+    var x = document.getElementById("myTopnav");
+    var t = document.getElementById("myIcon");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+        t.className = "icon open";
+        
+    } else {
+        x.className = "topnav";
+        t.className = "icon close";
+    }
+}
+</script>
+</head>
+<body>
+
+<nav>
+<ul class="topnav" id="myTopnav">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</nav>
+  <div class="icon" id="myIcon">
+    <a href="#" onclick="toggle()">&#9776;</a>
+  </div>
+
+<div style="padding-left:16px">
+  <h2>Hamburgermenu</h2>
+  <p>
+  Mag ik van u één hamburger? <br>
+  Graag met frietjes en cola...
+  </p>
+  <div class='zoomin'>
+  <img class='hb-img' src='hamburger.jpg' alt='hamburger' />
+  </div>
+</div>
+</body>
+</html>
